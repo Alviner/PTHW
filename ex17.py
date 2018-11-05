@@ -12,6 +12,8 @@ in_file = open(from_file)
 in_data = in_file.read()
 
 print "The input file if %d bytes long" % len(in_data)
+
+print "Does the output file exists? %r" % exists(to_file)
 print "Ready, hit RETURN to continue, CTRL-C (^C) to abort."
 raw_input()
 out_file = open(to_file, 'w')
